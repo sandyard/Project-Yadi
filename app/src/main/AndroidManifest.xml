@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edsnowden.guidemanasikumrah">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Activity.PanduanUmrah"
+            android:label="@string/panduan_umrah"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity.DoaManasik"
+            android:theme="@style/MyMaterialTheme"
+            android:label="@string/doa_manasik"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity.Informasi"
+            android:label="@string/informasi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity.PaketUmrah"
+            android:label="@string/paket_umrah"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity.Cabang"
+            android:label="@string/cabang_piuh"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity.JadwalKeberangkatan"
+            android:label="@string/jadwal"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".FragmentOne" />
+        <activity android:name=".FragmentTwo" />
+        <activity android:name=".FragmentThree"/>
+
+        android:theme="@style/MyMaterialTheme"
+    </application>
+
+</manifest>
